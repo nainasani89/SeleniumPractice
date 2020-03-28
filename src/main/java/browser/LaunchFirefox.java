@@ -10,7 +10,7 @@ public class LaunchFirefox {
 		
 	WebDriver driver;
 	driver = new FirefoxDriver();
-	System.setProperty("webdriver.gecko.driver", "D:\\driver\\geckodriver");
+	System.setProperty("webdriver.chrome.driver", "D:\\libs\\driver\\geckodriver.exe");
 	driver.get("https://www.myntra.com/");
 	
 	}

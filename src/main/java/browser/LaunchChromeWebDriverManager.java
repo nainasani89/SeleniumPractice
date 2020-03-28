@@ -18,10 +18,12 @@ public class LaunchChromeWebDriverManager {
 	public void openchrome() {
 		
 		
-		
-		driver = new ChromeDriver();
+	System.setProperty("webdriver.chrome.driver", "D:\\libs\\driver\\chromedriver.exe");
+	
+	
 		WebDriverManager.chromedriver().setup();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver = new ChromeDriver();
+		
 	}
 		
 		@AfterClass
