@@ -15,5 +15,7 @@ public class LocateByID extends LaunchChromeWebDriverManager{
 	driver.get("https://www.expedia.com/");
 	Thread.sleep(3000);
 	driver.findElement(By.id("primary-header-flight")).click();
+	Thread.sleep(2000);
+	driver.findElement(By.id("primary-header-hotel")).click();
   }
 }
